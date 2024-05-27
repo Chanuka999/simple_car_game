@@ -63,4 +63,39 @@ body{
     text-align: right;
     width: 23%;
     bottom: 5%;
+    z-index: 2000;
+    color: #e62e13;
+    text-shadow: -2px 0 black, 0 2p black, 2px black, 0 -2px black;
+    letter-spacing: 2px;
+    font-size: 23px;
+}
+#tacho::after{
+    content: "Kh/h";
+    color: #fab453;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+#game{
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #222;
+    user-select: none;
+    transition: opacity 10s;
+}
+
+#road{
+    transition: opacity 2s;
+    transition-timing-function: steps(8, end);
+}
+
+#road * {
+    position: absolute;
+    image-rendering: pixelated;
+}
+
+#hero{
+    background-repeat: no-repeat;
+    background-position: -110px 0;
 }
