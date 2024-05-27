@@ -39,3 +39,28 @@ body{
     content: "TIME";
     color: #f57214;
 }
+
+#score{
+    left: 45%;
+}
+
+#score::before{
+   content: "SCORE";
+   color: #a61a9d;
+}
+
+#lap{
+    left: 88%;
+    width: 45%;
+}
+
+#lap::before{
+    content: "LAP";
+    color: #0087df;
+}
+#tacho{
+    position: absolute;
+    text-align: right;
+    width: 23%;
+    bottom: 5%;
+}
